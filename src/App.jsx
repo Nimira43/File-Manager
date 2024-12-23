@@ -1,9 +1,12 @@
-function App() {
+import { BrowserRouter as Router } from 'react-router-dom'
+
+const App = () => {
   
   return (
-    <div>
+    <Router>
       <h1 className='logo'>File Manager</h1>
-    </div>
+      
+    </Router>
   )
 }
 
