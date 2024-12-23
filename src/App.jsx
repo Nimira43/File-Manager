@@ -1,11 +1,13 @@
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Users from './user/pages/Users'
 
 const App = () => {
   
   return (
     <Router>
-      <h1 className='logo'>File Manager</h1>
-      
+      <Routes>
+        <Route path='/' element={<Users />} />
+      </Routes>
     </Router>
   )
 }
